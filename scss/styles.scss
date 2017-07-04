@@ -1,0 +1,377 @@
+@import 'reset';
+@import 'base';
+header {
+	background-color: $clr-white;
+	.navbar {
+		margin-bottom: 0;
+		border: none;
+		.container-fluid {
+			background-color: $clr-white;
+			padding: 1em 0;
+			.navbar-header{
+				.navbar-toggle {
+					margin-right: 0;
+					transition: all .3s ease-in-out;
+					&:hover {
+						background-color: $clr-mexican-red;
+						color: $clr-white;
+					}
+					&:focus {
+						background-color: $clr-mexican-red;
+						color: $clr-white;
+					}
+					.glyphicon {
+						font-size: 1.1em;
+					}
+				}
+			}
+			.nav {
+				padding: 0.4em 0;
+				li {
+					padding: 0 0.2em;
+					a {
+						text-transform: uppercase;
+						padding: 0.5em 1em;
+						color: $clr-dove-grey;
+						font-weight: 400;
+						border-radius: .15em;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							background-color: $clr-mexican-red;
+							color: $clr-white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#banner {
+	@include background(
+		$clr-mexican-red,
+		url(../images/banner.png));
+	@extend .background-image;
+	.overlay {
+		background-color: rgba($clr-mexican-red, 0.5);
+		padding: 9em 0;
+		text-align: center;
+		color: $clr-white;
+		.content {
+			max-width: 85%;
+			margin: 0 auto;
+			h1 {
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+			p {
+				font-weight: 300;
+				font-size: 1.1em;
+			}
+			a {
+				background-color: $clr-white;
+				color: $clr-chateau-green;
+				background: linear-gradient($clr-white, rgba($clr-white, 0.6));
+				border: 5px solid $clr-cape-cod;
+				border: 5px solid rgba($clr-cape-cod, .3);
+				background-clip: padding-box;
+				border-radius: 1.5em;
+				font-weight: 700;
+				font-size: 1.4em;
+				font-family: 'Open Sans', sans-serif;
+				text-decoration: none;
+				padding: 0.5em 1.8em;
+				margin-top: 1.5em;
+				display: inline-block;
+				transition: all .3s ease-in-out;
+				&:hover {
+					color: $clr-mexican-red;
+				}
+			}
+		}
+	}
+}
+#content {
+	.first_row {
+		height: 250px;
+		.logo {
+			background-color: $clr-papmas;
+			text-align: right;
+			height: 100%;
+			img {
+				@extend .verticalCentering;
+				padding-right: 1em;
+			}
+		}
+		.trunk {
+			height: 100%;
+			@include background(
+				$clr-grey,
+				url(../images/trunk.png));
+			@extend .background-image;
+		}
+		.donate {
+			height: 100%;
+			background-color: $clr-mexican-red;
+			.text {
+				@extend .verticalCentering;
+				padding-left: 1em;
+			}
+			a {
+				font-size: 2em;
+				font-weight: 700;
+				margin: 0;
+				line-height: 1;
+				text-decoration: none;
+				color: $clr-white;
+				@extend .transition;
+				&:hover {
+					color: $clr-fern;
+				}
+			}
+			p {
+				color: $clr-white;
+				font-weight: 400;
+				margin: .3em 0 0;
+			}
+		}
+	}
+	.second_row {
+		height: 500px;
+		.sign-up {
+			height: 100%;
+			.row {
+				height: 100%;
+				.form {
+					height: 50%;
+					background-color: $clr-chateau-green;
+					color: $clr-white;
+					.content {
+						text-align: right;
+						padding-right: 1em;
+						max-width: 550px;
+						float: right;
+						@extend .verticalCentering;
+						h2 {
+							margin: 0;
+							font-weight: 700;
+							font-size: 2em;
+						}
+						p {
+							text-indent: 30px;
+						}
+						form {
+							margin: 1.5em 0 1em 0;
+							input {
+								border-radius: 0;
+								background-color: $clr-fern;
+								border: none;
+								float: right;
+								color: $clr-white;
+								&::placeholder {
+									color: $clr-sea-green;
+								}
+							}
+							span {
+								button {
+									background-color: $clr-sea-green;
+									color: $clr-white;
+									border: 1px solid $clr-sea-green;
+									@extend .transition;
+									&:hover, &:focus {
+										background-color: $clr-mexican-red;
+									}
+								}
+							}
+						}
+					}
+				}
+				.img {
+					height: 50%;
+					@include background(
+						$clr-sea-green,
+						url(../images/grass.png));
+					@extend .background-image;
+				}
+			}
+		}
+		.facebook {
+			height: 100%;
+			position: relative;
+			@include background(
+				$clr-chambray,
+				url(../images/leaf.png));
+			@extend .background-image;
+			.content {
+				background-color: $clr-chambray;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 250px;
+				height: 50%;
+				text-align: center;
+				.text {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -40%);
+					a {
+						display: inline-block;
+						color: $clr-white;
+						text-decoration: none;
+						@extend .transition;
+						&:hover {
+							color: $clr-fern;
+						}
+					}
+					i {
+						font-size: 5em;
+					}
+					a:last-child {
+						margin: .5em 0 0;
+					}
+				}
+			}
+		}
+	}
+}
+#events {
+	text-align: center;
+	padding: 3em 0;
+	h3 {
+		font-size: 3em;
+		margin:  0 0 .7em;
+	}
+	.owl-theme {
+		.block {
+			background-color: $clr-white;
+			color: $clr-cape-cod;
+			padding: 0 2.5em;
+			.cell {
+				background-color: $clr-cape-cod;
+				width: 70px;
+				height: 70px;
+				margin: 0 auto;
+				position: relative;
+				.triangle {
+					height: 20px;
+					width: 20px;
+					background-color: $clr-cape-cod;
+					position: absolute;
+					bottom: -25%;
+					left: 50%;
+					transform: rotate(45deg) translateX(-70%);
+				}
+				.date {
+					font-weight: 700;
+					color: $clr-white;
+					font-size: 2em;
+					margin: 0;
+					@extend .centering;
+				}
+			}
+			h4 {
+				color: $clr-mexican-red;
+				font-size: 1.7em;
+				margin: 0.8em 0 0.6em;
+			}
+			h5 {
+				color: $clr-cape-cod;
+				font-size: 1.1em;
+				font-weight: 700;
+				margin-bottom: .5em;
+			}
+			p {
+				font-size: .9em;
+			}
+			button {
+				background-color: $clr-cape-cod;
+				color: $clr-white;
+				padding: .5em 1.5em;
+				text-transform: uppercase;
+				margin: .7em 0 .7em;
+				@extend .transition;
+				&:hover {
+					background-color: $clr-mexican-red;
+				}
+			}
+		}
+	}
+}
+footer {
+	background-color: $clr-cape-cod;
+	color: $clr-white;
+	.content {
+		padding: 3.5em 0 0em;
+		border-bottom: 1px solid $clr-dove-grey;
+		h6 {
+			font-size: 1.2em;
+			margin: 0 0 .5em;
+		}
+		a {
+			display: inline-block;
+			font-size: 1.5em;
+			width: 40px;
+			height: 40px;
+			color: $clr-white;
+			margin-right: 0.4em;
+			float: left;
+			@extend .transition;
+			&:hover {
+				color: $clr-mexican-red;
+			}
+			i {
+				position: relative;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -70%);
+			}
+		}
+		form {
+			.form-control {
+				border-radius: 0;
+				background-color: $clr-dove-grey;
+				border: none;
+				float: right;
+				color: $clr-white;
+				&::placeholder {
+					color: $clr-grey;
+				}
+			}
+			.input-group-btn {
+				button {
+					background-color: $clr-mexican-red;
+					color: $clr-white;
+					border: 1px solid $clr-mexican-red;
+					@extend .transition;
+					&:hover, &:focus {
+						color: $clr-white;
+						background-color: $clr-mexican-red;
+					}
+				}
+			}
+		}
+		.contact-us {
+			text-align: right;
+			ul {
+				list-style: none;
+				color: $clr-grey;
+			}
+		}
+		.facebook {
+			background-color: $clr-chambray;
+		}
+		.twitter {
+			background-color: $clr-picton-blue;
+		}
+		.google-plus {
+			background-color: $clr-cinnabar;
+		}
+	}
+	p {
+		text-align: center;
+		color: $clr-grey;
+		padding: 1.5em 0;
+		margin: 0
+	}
+}
+@import 'responsive';

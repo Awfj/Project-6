@@ -1,0 +1,57 @@
+$clr-white: #ffffff;
+$clr-mexican-red: #9b242d;
+$clr-cape-cod: #444545;
+$clr-chateau-green: #46A651;
+$clr-dove-grey: #616161;
+$clr-sea-green: #348e3e;
+$clr-grey: #939393;
+$clr-papmas: #f1efec;
+$clr-fern: #5ec069;
+$clr-chambray: #3b5997;
+$clr-picton-blue: #3ec2f3;
+$clr-cinnabar: #e44c41;
+
+@mixin background($color, $image) {
+	background-color: $color;
+	background-image: $image;
+}
+.background-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.verticalCentering {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.centering {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all .3s ease-in-out;
+}
+body{
+	font-family: 'Roboto Slab', serif;
+	// font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+	width: 1030px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.btn{
+	border-radius: 0;
+}
+.active-sth {
+	background-color: $clr-mexican-red;
+	color: $clr-white;
+}

@@ -12,7 +12,7 @@ $(function() {
 		            items:2,
 		            loop: true
 		        },
-		        600:{
+		        768:{
 		            items:3,
 		            loop: false,
 		            nav: false

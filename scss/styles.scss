@@ -49,7 +49,7 @@ header {
 #banner {
 	@include background(
 		$clr-mexican-red,
-		url(../images/banner.png));
+		url(https://cdn.rawgit.com/Awfj/Project-6/515063e7/images/banner.svg));
 	@extend .background-image;
 	.overlay {
 		background-color: rgba($clr-mexican-red, 0.5);

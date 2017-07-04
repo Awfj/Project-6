@@ -95,7 +95,7 @@ header {
 
 #banner {
   background-color: #9b242d;
-  background-image: url(../images/banner.png); }
+  background-image: url(https://cdn.rawgit.com/Awfj/Project-6/515063e7/images/banner.svg); }
   #banner .overlay {
     background-color: rgba(155, 36, 45, 0.5);
     padding: 9em 0;

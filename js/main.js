@@ -8,7 +8,7 @@ $(function() {
 		            items:1,
 		            loop: true
 		        },
-		        350:{
+		        480:{
 		            items:2,
 		            loop: true
 		        },

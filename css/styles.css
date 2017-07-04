@@ -1,18 +1,16 @@
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
+/* html {
+	box-sizing: border-box;
+}
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit; }
-
+	box-sizing: inherit;
+}
 .cf:before, .cf:after {
-  content: ' ';
-  display: table; }
-
+	content: ' ';
+	display: table;
+}
 .cf:after {
-  clear: both; }
-
+	clear: both;
+} */
 .background-image, #banner, #content .first_row .trunk, #content .second_row .sign-up .row .img, #content .second_row .facebook {
   background-repeat: no-repeat;
   background-size: cover;
